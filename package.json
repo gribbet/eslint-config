@@ -7,7 +7,7 @@
     "url": "git+https://github.com/gribbet/eslint-config.git"
   },
   "main": ".eslintrc",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
