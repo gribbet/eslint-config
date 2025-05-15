@@ -13,6 +13,7 @@ export default tsLint.config(
   importLint.flatConfigs.react,
   prettierLintRecommended,
   {
+    files: ["**/*.ts", "**/*.tsx"],
     plugins: {
       "simple-import-sort": simpleImportSortLint,
       "unused-imports": unusedImportsLint,
