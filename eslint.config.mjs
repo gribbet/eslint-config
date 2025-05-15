@@ -6,6 +6,9 @@ import unusedImportsLint from "eslint-plugin-unused-imports";
 import tsLint from "typescript-eslint";
 
 export default tsLint.config(
+  {
+    ignores: ["eslint.config.mjs"],
+  },
   jsLint.configs.recommended,
   tsLint.configs.recommendedTypeChecked,
   importLint.flatConfigs.recommended,
@@ -13,7 +16,6 @@ export default tsLint.config(
   importLint.flatConfigs.react,
   prettierLintRecommended,
   {
-    files: ["**/*.ts", "**/*.tsx"],
     plugins: {
       "simple-import-sort": simpleImportSortLint,
       "unused-imports": unusedImportsLint,
