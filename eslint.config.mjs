@@ -1,5 +1,4 @@
 import jsLint from "@eslint/js";
-import importLint from "eslint-plugin-import";
 import prettierLintRecommended from "eslint-plugin-prettier/recommended";
 import simpleImportSortLint from "eslint-plugin-simple-import-sort";
 import unusedImportsLint from "eslint-plugin-unused-imports";
@@ -11,9 +10,6 @@ export default tsLint.config(
   },
   jsLint.configs.recommended,
   tsLint.configs.recommendedTypeChecked,
-  importLint.flatConfigs.recommended,
-  importLint.flatConfigs.typescript,
-  importLint.flatConfigs.react,
   prettierLintRecommended,
   {
     plugins: {
@@ -96,5 +92,5 @@ export default tsLint.config(
       "simple-import-sort/imports": "error",
       "unused-imports/no-unused-imports": "error",
     },
-  }
+  },
 );
